@@ -1,6 +1,5 @@
-import { nanoid } from 'nanoid';
 import { useDispatch } from 'react-redux';
-import { addContact } from 'redux/contactsSlice';
+import { addContact } from 'redux/operations';
 
 import {
   ContactForms,
@@ -17,9 +16,8 @@ export default function Form() {
     const form = event.target;
     const name = form.elements.name.value;
     const number = form.elements.number.value;
-    const id = nanoid();
 
-    dispatch(addContact({ name, number, id }));
+    dispatch(addContact({ name, number }));
     form.reset();
   };
 

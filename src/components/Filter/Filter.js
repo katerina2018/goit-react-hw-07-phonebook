@@ -6,8 +6,9 @@ import { filterContacts } from 'redux/filterSlice';
 import { ContactInput, ContactLabel } from './Filter.styles';
 
 const Filter = () => {
-  const filter = useSelector(getFilterValue);
   const dispatch = useDispatch();
+  const filter = useSelector(getFilterValue);
+
   const changeFilterHandler = ({ target: { value } }) => {
     dispatch(filterContacts(value));
   };
