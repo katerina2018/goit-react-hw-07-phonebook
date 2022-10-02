@@ -1,4 +1,7 @@
 import styled from '@emotion/styled';
+export const ContactInfo = styled.p`
+  width: 50%;
+`;
 
 export const ContactListButton = styled.button`
   background-color: #d64848;
