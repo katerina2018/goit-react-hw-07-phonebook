@@ -14,7 +14,7 @@ export function ContactList() {
       const normalizeFilter = filter.toLowerCase().trim();
 
       const allContacts = contacts.filter(contact =>
-        contact.name.toLowerCase().includes(normalizeFilter)
+        contact.text.name.toLowerCase().includes(normalizeFilter)
       );
 
       const inAlphabetContact = [
