@@ -17,7 +17,8 @@ const Contact = ({ contact }) => {
     <>
       {<HiOutlineUser />}
       <ContactInfo>
-        {contact.text.name}:<br /> {contact.text.number}
+        {contact.text.name}
+        <br /> {contact.text.number}
       </ContactInfo>
 
       <ContactListButton type="button" onClick={onDeleteContant}>

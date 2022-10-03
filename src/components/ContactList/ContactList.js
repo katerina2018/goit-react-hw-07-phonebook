@@ -19,7 +19,7 @@ export function ContactList() {
 
       const inAlphabetContact = [
         ...allContacts.sort((firstContact, secondContact) =>
-          firstContact.name.localeCompare(secondContact.name)
+          firstContact.text.name.localeCompare(secondContact.text.name)
         ),
       ];
 
